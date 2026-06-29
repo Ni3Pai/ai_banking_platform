@@ -58,3 +58,35 @@ corporate banking clients. Follows official 4-step framework:
 - [EU AI Act Checker](link)
 - [EU Taxonomy Assessment Tool](link)
 
+## 🔌 REST API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/` | Platform info |
+| POST | `/risk-assessment` | Analyse customer risk |
+| POST | `/user-stories` | Generate user stories |
+| POST | `/eu-ai-act` | Check EU AI Act compliance |
+| POST | `/eu-taxonomy` | EU Taxonomy assessment |
+
+## Example Request
+```json
+POST /risk-assessment
+{
+    "name": "Jan de Vries",
+    "balance": 750,
+    "transactions": 142,
+    "is_active": true
+}
+```
+
+## Example Response
+```json
+{
+    "customer_name": "Jan de Vries",
+    "risk_score": 4,
+    "risk_level": "Low",
+    "reason": "Moderate balance with stable activity",
+    "recommendation": "Continue monitoring"
+}
+```
+
