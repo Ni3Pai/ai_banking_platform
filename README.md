@@ -58,7 +58,3 @@ corporate banking clients. Follows official 4-step framework:
 - [EU AI Act Checker](link)
 - [EU Taxonomy Assessment Tool](link)
 
-## 👤 Author
-Nitin Pai — AI PO / FDE candidate  
-10 years financial services | Rabobank | ESG & Credit Risk  
-Netherlands
