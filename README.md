@@ -90,3 +90,14 @@ POST /risk-assessment
 }
 ```
 
+## 🌍 Live API
+**Base URL:** https://aibankingplatform-production.up.railway.app
+
+**API Docs:** https://aibankingplatform-production.up.railway.app/docs
+
+## Quick Test
+```bash
+curl -X POST https://aibankingplatform-production.up.railway.app/risk-assessment \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Jan de Vries", "balance": 750, "transactions": 142, "is_active": true}'
+```
