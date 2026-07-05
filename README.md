@@ -99,5 +99,27 @@ POST /risk-assessment
 ```bash
 curl -X POST https://aibankingplatform-production.up.railway.app/risk-assessment \
   -H "Content-Type: application/json" \
+
+## 🧠 RAG Pipeline (Document Intelligence)
+
+AI-powered document question answering using 
+Retrieval Augmented Generation (RAG).
+
+### How It Works
+1. Upload any PDF  document
+2. Document is split into chunks
+3. Semantic search finds relevant sections
+4. AI answers from your specific document
+
+### Tech
+- pypdf — PDF text extraction
+- sentence-transformers — semantic embeddings  
+- Groq API — answer generation
+- Semantic search — meaning based retrieval
+
+### Example
+Question: "Which sectors require DNSH assessment?"
+Answer: "Energy, Manufacturing and Transport"
+← Answered from your actual document, not general knowledge
   -d '{"name": "Jan de Vries", "balance": 750, "transactions": 142, "is_active": true}'
 ```
