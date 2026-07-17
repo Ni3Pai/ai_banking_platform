@@ -121,5 +121,20 @@ Retrieval Augmented Generation (RAG).
 Question: "Which sectors require DNSH assessment?"
 Answer: "Energy, Manufacturing and Transport"
 ← Answered from your actual document, not general knowledge
+
+
+## 📚 Multi-Document RAG
+AI-powered policy Q&A across multiple documents simultaneously.
+Searches ESG, Credit Risk and AML policies with citations.
+- LangChain + FAISS
+- Cross-document semantic search
+- Source citations in answers
+
+## 🤖 Banking Compliance Agent
+AI agent that reasons and uses tools to check compliance.
+Automatically decides which checks to run.
+- 3 compliance tools (risk, AML, credit limits)
+- Multi-tool reasoning
+- Complete client onboarding checks
   -d '{"name": "Jan de Vries", "balance": 750, "transactions": 142, "is_active": true}'
 ```
